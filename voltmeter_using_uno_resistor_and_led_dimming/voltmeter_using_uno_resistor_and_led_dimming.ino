@@ -1,3 +1,4 @@
+//change 32nd and 33rd line according to your project components
 int led=3;
 // Total number of readings to take for voltage measure
 const int numReadings = 10;
@@ -29,7 +30,7 @@ void loop()
     // Calculate input voltage using the formula [ Vin  = Vout * ( (R1 + R2) / R2 )]
     // Here R1 = 10kΩ, R2 = 2.2kΩ
     float Vin = voltage * 12.2 / 2.2;
-    Vin = 1.25 * Vin;// here the 1.25 is the scaling factor set by testing with multimeter
+    Vin = 1 * Vin;// here the 1 is the scaling factor set by testing with multimeter
     
     // Print voltage readings to serial monitor
     Serial.print("Voltage: ");
